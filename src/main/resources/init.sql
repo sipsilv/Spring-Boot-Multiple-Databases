@@ -9,3 +9,17 @@ INSERT INTO patient (first_name, last_name, blood_group, date_of_birth, email, g
 ('Mia', 'Wilson', 'AB-', '1993-11-18', 'mia.wilson@example.com', 'Female'),
 ('Noah', 'Anderson', 'A+', '1999-02-09', 'noah.anderson@example.com', 'Male'),
 ('Olivia', 'Thomas', 'O+', '2000-08-16', 'olivia.thomas@example.com', 'Female');
+
+
+INSERT INTO doctor (name, specialization) VALUES
+('Dr. Santhosh Jallu', 'Cardiologist'),
+('Dr. Aditya Dhavala', 'Neurologist'),
+('Dr. Priya Sharma', 'Dermatologist'),
+('Dr. Arjun Mehta', 'Orthopedic Surgeon'),
+('Dr. Kavya Iyer', 'Pediatrician'),
+('Dr. Rahul Verma', 'Oncologist'),
+('Dr. Sneha Reddy', 'Gynecologist'),
+('Dr. Manish Patel', 'General Physician'),
+('Dr. Meera Nair', 'Psychiatrist'),
+('Dr. Rohan Kapoor', 'Endocrinologist');
+

@@ -39,10 +39,10 @@ public class Patient {
     @JoinColumn(nullable = false)
     private String gender;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = {CascadeType.MERGE , CascadeType.PERSIST})
     @JoinColumn(name = "patient_insurance_id")  // owning side
     private Insurance insurance;
 
-    @OneToMany(mappedBy = "patient") // inverse side
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.REMOVE, orphanRemoval = true) // inverse side
     private List<Appointment> appointments;
 }

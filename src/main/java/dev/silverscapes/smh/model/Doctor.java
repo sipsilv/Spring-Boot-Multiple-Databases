@@ -24,7 +24,7 @@ public class Doctor {
     private String specialization;
 
 
-    @OneToMany(mappedBy = "doctor")
+    @OneToMany(mappedBy = "doctor", cascade = CascadeType.REMOVE,  orphanRemoval = true)
     //@JoinColumn(nullable = false)
     private List<Appointment> appointments;
 
